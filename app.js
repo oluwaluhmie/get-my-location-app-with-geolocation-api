@@ -2,13 +2,6 @@ const btn = document.getElementById("btn");
 const country_container = document.getElementById("country-container");
 const map = document.getElementById("map");
 
-// http://api.positionstack.com/v1/forward
-//     ? access_key = c5c36ee242d646f3838199d0b8fa0d3d
-//     & query = 1600 Pennsylvania Ave NW, Washington DC
-//Geolocation API
-
-// c5c36ee242d646f3838199d0b8fa0d3d
-
 function geo () {
   if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function (position) {
